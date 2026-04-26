@@ -3,68 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Koto – Tietosuojaseloste / Privacy Policy</title>
+<title>Koto, asuntosi digitaalinen huoltokirja</title>
 <style>
-  body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #1c1c1e; line-height: 1.6; }
-  h1 { font-size: 28px; }
-  h2 { font-size: 20px; margin-top: 32px; }
-  h3 { font-size: 16px; margin-top: 24px; color: #555; }
-  .lang { margin-top: 48px; padding-top: 32px; border-top: 1px solid #e5e5ea; }
-  .updated { color: #8e8e93; font-size: 14px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+
+  header { text-align: center; margin-bottom: 64px; }
+  .logo {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+  }
+  .tagline {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+  }
+
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .card + .card { margin-top: 12px; }
+  .card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .contact-link {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.15s ease;
+  }
+  .contact-link:hover { background: rgba(255,255,255,0.14); }
+
+  .lang-switch {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .lang-switch a {
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 12px;
+  }
+  .lang-switch a.active { color: #ffffff; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: rgba(255,255,255,0.35);
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  footer a:hover { color: #ffffff; }
 </style>
 </head>
 <body>
 
-<h1>Koto – Tietosuojaseloste</h1>
-<p class="updated">Päivitetty 22.4.2026</p>
+<div class="container">
 
-<h2>1. Rekisterinpitäjä</h2>
-<p>Koto-sovelluksen kehittäjä Olli Paananen<br>Sähköposti: ollip.paananen@gmail.com</p>
+  <header>
+    <div class="logo">KOTO</div>
+    <div class="tagline">Asuntosi digitaalinen huoltokirja</div>
+  </header>
 
-<h2>2. Kerättävät tiedot</h2>
-<p>Koto kerää vain tiedot jotka käyttäjä itse syöttää:</p>
-<ul>
-  <li><strong>Tilitiedot:</strong> sähköpostiosoite ja salasana (salattu)</li>
-  <li><strong>Kiinteistön tiedot:</strong> osoite, rakennusvuosi, rakenteet, talotekniikka, kuva</li>
-  <li><strong>Huoltotiedot:</strong> tehtävät, päiväkirjamerkinnät, dokumentit, kustannukset</li>
-</ul>
-<p>Sovellus ei kerää sijaintitietoja, analytiikkaa, mainostunnuksia eikä jaa tietoja kolmansille osapuolille.</p>
+  <div class="lang-switch">
+    <a href="#fi" class="active">Suomi</a>
+    <span style="color:rgba(255,255,255,0.2)">·</span>
+    <a href="#en">English</a>
+  </div>
 
-<h2>3. Tietojen tallennus</h2>
-<p>Tiedot tallennetaan Supabase-pilvipalveluun (EU, Frankfurt). Jokainen käyttäjä näkee vain omat tietonsa (Row Level Security). Salasanat on salattu eikä niitä tallenneta selkokielisinä.</p>
+  <section id="fi">
+    <h2>Tervetuloa</h2>
+    <div class="card">
+      <p>Koto auttaa pitämään asunnostasi huolta automaattisesti. Sovellus laatii sinulle henkilökohtaisen huoltosuunnitelman, johon voit kirjata tehtyjä huoltoja, tallentaa dokumentteja ja seurata kustannuksia.</p>
+    </div>
+  </section>
 
-<h2>4. Tietojen poistaminen</h2>
-<p>Käyttäjä voi poistaa kiinteistöjään, tehtäviään ja dokumenttejaan sovelluksessa. Tilin ja kaiken datan poiston voi pyytää sähköpostilla: ollip.paananen@gmail.com</p>
+  <section>
+    <h2>Usein kysyttyä</h2>
 
-<h2>5. Muutokset</h2>
-<p>Tätä selostetta voidaan päivittää. Merkittävistä muutoksista ilmoitetaan sovelluksessa.</p>
+    <div class="card">
+      <h3>Miten luon huoltosuunnitelman?</h3>
+      <p>Avaa sovellus, lisää uusi asunto ja täytä perustiedot. Koto luo automaattisesti suunnitelman tietojen perusteella.</p>
+    </div>
 
-<div class="lang">
+    <div class="card">
+      <h3>Voinko lisätä useita asuntoja?</h3>
+      <p>Kyllä. Profiilisivulta voit lisätä useamman asunnon ja vaihtaa aktiivisen napauttamalla.</p>
+    </div>
 
-<h1>Koto – Privacy Policy</h1>
-<p class="updated">Updated April 22, 2026</p>
+    <div class="card">
+      <h3>Kuinka palautan salasanan?</h3>
+      <p>Kirjautumisnäytöllä napauta "Unohditko salasanasi". Saat sähköpostiisi linkin, jolla voit asettaa uuden salasanan. Avaa linkki sillä laitteella, johon Koto on asennettu.</p>
+    </div>
 
-<h2>1. Data Controller</h2>
-<p>Koto app developer Olli Paananen<br>Email: ollip.paananen@gmail.com</p>
+    <div class="card">
+      <h3>Voinko poistaa tilini?</h3>
+      <p>Kyllä. Profiilisivulta löydät roskakori-ikonin oikealla yläkulmassa, josta voit poistaa tilisi ja kaiken datasi pysyvästi.</p>
+    </div>
 
-<h2>2. Data Collected</h2>
-<p>Koto only collects data that the user enters:</p>
-<ul>
-  <li><strong>Account:</strong> email address and password (encrypted)</li>
-  <li><strong>Property details:</strong> address, year built, structures, building systems, photo</li>
-  <li><strong>Maintenance data:</strong> tasks, diary entries, documents, costs</li>
-</ul>
-<p>The app does not collect location data, analytics, advertising identifiers, nor does it share data with third parties.</p>
+    <div class="card">
+      <h3>Mihin huoltosuositukset perustuvat?</h3>
+      <p>Suositukset perustuvat Motiva Oy:n julkaisuun "Pientalon huoltokirja" (2024) sekä RT-kortteihin ja muihin virallisiin lähteisiin.</p>
+    </div>
+  </section>
 
-<h2>3. Data Storage</h2>
-<p>Data is stored in Supabase cloud service (EU, Frankfurt). Each user can only access their own data (Row Level Security). Passwords are encrypted and never stored in plain text.</p>
+  <section>
+    <h2>Yhteystiedot</h2>
+    <div class="card">
+      <p style="margin-bottom: 20px;">Onko sinulla kysyttävää tai palautetta? Lähetä viesti sähköpostilla.</p>
+      <a class="contact-link" href="mailto:ollip.paananen@gmail.com">ollip.paananen@gmail.com</a>
+    </div>
+  </section>
 
-<h2>4. Data Deletion</h2>
-<p>Users can delete their properties, tasks and documents within the app. To request full account and data deletion, email: ollip.paananen@gmail.com</p>
+  <section id="en">
+    <h2>Welcome</h2>
+    <div class="card">
+      <p>Koto helps you take care of your home automatically. The app creates a personal maintenance plan where you can log completed work, store documents and track costs.</p>
+    </div>
+  </section>
 
-<h2>5. Changes</h2>
-<p>This policy may be updated. Significant changes will be communicated within the app.</p>
+  <section>
+    <h2>FAQ</h2>
+
+    <div class="card">
+      <h3>How do I create a maintenance plan?</h3>
+      <p>Open the app, add a new home and fill in the basic details. Koto generates a plan automatically based on your home's information.</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I add multiple homes?</h3>
+      <p>Yes. From the profile screen you can add more homes and switch the active one by tapping it.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I reset my password?</h3>
+      <p>On the login screen, tap "Forgot your password". You'll get an email with a link to set a new password. Open the link on the device where Koto is installed.</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I delete my account?</h3>
+      <p>Yes. On the profile screen, tap the trash icon in the top right corner of the account card to permanently delete your account and all data.</p>
+    </div>
+
+    <div class="card">
+      <h3>What are maintenance recommendations based on?</h3>
+      <p>Recommendations are based on Motiva Oy's publication "Pientalon huoltokirja" (2024), Finnish RT building cards, and other official sources.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p style="margin-bottom: 20px;">Got a question or feedback? Send us an email.</p>
+      <a class="contact-link" href="mailto:ollip.paananen@gmail.com">ollip.paananen@gmail.com</a>
+    </div>
+  </section>
 
 </div>
+
+<footer>
+  Koto · <a href="privacy.html">Tietosuojaseloste / Privacy Policy</a>
+</footer>
+
 </body>
 </html>
